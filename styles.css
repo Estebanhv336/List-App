@@ -1,0 +1,151 @@
+/*estilos globales*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+}
+/* contenedor principal*/
+.app-container {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.task-Form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* estilos del formulario */
+.task-Form input,
+.task-Form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.task-Form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.task-Form button:hover {
+  background-color: #218838;
+}
+/*lista de tareas */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+.task-item {
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.task-item input,
+.task-item textarea {
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.task-item p {
+  margin: 0;
+  color: #555;
+}
+.task-item button {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.task-item button:hover {
+  background: #0056b3;
+}
+.task-item [type="button"] {
+  background: #f44336;
+}
+.task-item [type="button"]:hover {
+  background: #d32f2f;
+}
+
+/*estilos para los botones*/
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.filter-buttons button {
+  background: #007bff;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+.task-date {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 5px;
+}
+
+.sort-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.sort-buttons button {
+  padding: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sort-buttons button:hover {
+  background-color: #0056b3;
+}
